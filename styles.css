@@ -1,0 +1,36 @@
+.title {
+    display: flex;
+    justify-content:center ;
+}
+
+.big-container {
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-title, .box-date {
+margin: 0 0 10px 0;
+}
+
+.box-date {
+    color: rgb(216, 216, 216)
+}
