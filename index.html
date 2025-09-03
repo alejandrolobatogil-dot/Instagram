@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--Aca empieza la barra de arriba-->
+    <nav id="mainNavbar" class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+<!-- este es el botón crear-->
+            <div class="d-flex">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#newPostModal">
+                    Create a new post
+                </button>
+<!-- este es el botón ruedita-->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--este es el cambio de forma del feed-->
+    <div class="container text-center my-3">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#grid-view">
+                    <i class="fa-solid fa-grip"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feed-view">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+<!--columnas de 3 vista gral.-->
+    <div class="tab-content">
+      
+        <div class="tab-pane fade show active" id="grid-view">
+            <div class="container text-center mt-4">
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/20/600/600" class="img-fluid" alt="Imagen 1"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/21/600/600" class="img-fluid" alt="Imagen 2"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/22/600/600" class="img-fluid" alt="Imagen 3"></div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/23/600/600" class="img-fluid" alt="Imagen 4"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/24/600/600" class="img-fluid" alt="Imagen 5"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/25/600/600" class="img-fluid" alt="Imagen 6"></div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/26/600/600" class="img-fluid" alt="Imagen 7"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/27/600/600" class="img-fluid" alt="Imagen 8"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-2"><img src="https://picsum.photos/id/28/600/600" class="img-fluid" alt="Imagen 9"></div>
+                </div>
+            </div>
+        </div>
+<!--Card para cambiar a vista individual-->
+        <div class="tab-pane fade" id="feed-view">
+            
+            <div class="card w-50 mx-auto mb-4">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">My first photo!</h5>
+                    <span class="text-muted">01/09</span>
+                </div>
+                <img src="https://picsum.photos/id/20/600/400" class="card-img-top" alt="Imagen 1">
+                <div class="card-body">
+                    <p class="card-text"><strong>204 Likes</strong></p>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram.</p>
+                </div>
+            </div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">A cool landscape</h5><span class="text-muted">02/09</span></div><img src="https://picsum.photos/id/21/600/400" class="card-img-top" alt="Imagen 2"><div class="card-body"><p class="card-text"><strong>512 Likes</strong></p><p class="card-text">Exploring new places and capturing moments.</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">City lights</h5><span class="text-muted">03/09</span></div><img src="https://picsum.photos/id/22/600/400" class="card-img-top" alt="Imagen 3"><div class="card-body"><p class="card-text"><strong>1,230 Likes</strong></p><p class="card-text">The city never sleeps. So much energy!</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Forest vibes</h5><span class="text-muted">04/09</span></div><img src="https://picsum.photos/id/23/600/400" class="card-img-top" alt="Imagen 4"><div class="card-body"><p class="card-text"><strong>87 Likes</strong></p><p class="card-text">Nothing like a walk in the woods to clear your head.</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">My crazy dog Spark!</h5><span class="text-muted">05/09</span></div><img src="https://picsum.photos/id/237/600/400" class="card-img-top" alt="Imagen 5"><div class="card-body"><p class="card-text"><strong>998 Likes</strong></p><p class="card-text">He's always up to something!</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Ocean view</h5><span class="text-muted">06/09</span></div><img src="https://picsum.photos/id/25/600/400" class="card-img-top" alt="Imagen 6"><div class="card-body"><p class="card-text"><strong>345 Likes</strong></p><p class="card-text">The sound of the waves is so relaxing.</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Mountain top</h5><span class="text-muted">07/09</span></div><img src="https://picsum.photos/id/26/600/400" class="card-img-top" alt="Imagen 7"><div class="card-body"><p class="card-text"><strong>750 Likes</strong></p><p class="card-text">The climb was worth it for this view.</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Coffee time</h5><span class="text-muted">08/09</span></div><img src="https://picsum.photos/id/27/600/400" class="card-img-top" alt="Imagen 8"><div class="card-body"><p class="card-text"><strong>180 Likes</strong></p><p class="card-text">A good start to the day requires good coffee.</p></div></div>
+            <div class="card w-50 mx-auto mb-4"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">On the road</h5><span class="text-muted">09/09</span></div><img src="https://picsum.photos/id/28/600/400" class="card-img-top" alt="Imagen 9"><div class="card-body"><p class="card-text"><strong>412 Likes</strong></p><p class="card-text">Adventure is out there.</p></div></div>
+
+        </div>
+    </div>
+    
+    <div class="modal fade" id="newPostModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-1"><strong>Caption:</strong></p>
+                    <textarea class="form-control" rows="3" placeholder="Add the caption of your post here"></textarea>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-secondary"><i class="fa-solid fa-camera"></i></button>
+                        <button class="btn btn-outline-secondary"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

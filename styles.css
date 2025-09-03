@@ -1,0 +1,14 @@
+#mainNavbar {
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    }
+#mainNavbar .navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    }
+#mainNavbar .fa-instagram {
+    margin-right: 8px;
+}
+#mainNavbar .btn {
+    align-self: center;
+}
