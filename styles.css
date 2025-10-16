@@ -1,0 +1,73 @@
+.instagram{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 222);
+  }
+body{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 222);
+}
+    img{
+    height: 500px;
+    width: 500px;
+  }
+  
+ h2,h3,h4,h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    border-top: px;
+    background-color: white;
+ }
+  
+  .fecha{
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    width: 500px;
+    background-color: white;
+  }
+
+  .pie-de-pagina{
+  height: 100px;
+  width: 480px;
+  justify-content: left;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  } 
+
+.bottom-instagram{
+  display-flex;
+}
+
+.instagram2,p{
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    width: 500px;
+    background-color: white;
+}
+h1{
+  background-color: white; 
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+  position: 0%;
+}
+
+
+
+  
+
+  
+
+
+  
